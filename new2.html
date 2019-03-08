@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<style>	
+
+@font-face {
+    font-family: '112'; /* Имя шрифта */
+    src: url(112.ttf); /* Путь к файлу со шрифтом */
+   }
+		body{
+	/*background: white;*/
+	background:url(bg.jpg) fixed repeat bottom center;	
+}
+
+a{
+font-family: '112';
+}
+
+.wrap{
+border-radius:30px;
+background: white;
+height: 80vh; 
+width:90%;
+}
+
+.cont2{
+position:relative;
+margin-top:-115%;
+background:url(unnamed.png) no-repeat;
+height: 20vh; 
+width:110%;
+background-size:contain;
+}
+
+#content{
+position:relative;
+margin-top:-10%;
+background:url(c3.png) no-repeat;
+height: 40vh; 
+width:70%;
+background-size:contain;
+}
+
+#content.show{
+position:relative;
+margin-top:-10%;
+background:url(c4.png);
+height: 40vh; 
+width:70%;
+background-size:contain;
+background-repeat:no-repeat;
+}
+
+#con{
+background:url(listen2.jpg) no-repeat;
+height: 30vh; 
+width:80%;
+margin-top:10%;
+background-size:contain;
+}
+
+#con.show{
+background:url(listen.gif) no-repeat;
+height: 30vh; 
+width:80%;
+background-size:contain;
+}
+
+a{
+font-family: '112';
+font-size:45pt;
+letter-spacing:5px; 
+color:red;
+}
+a img{
+margin-top:66%;
+}	
+img.mg{
+margin-top:-70%;
+width: 60%;	
+}
+img.tg{
+width: 80%;	
+}
+h1{
+	font-family: '112';
+	position: absolute;
+	text-align: center;
+	margin-left: 50%;
+	margin-top:-1%;
+	letter-spacing:25px;
+	font-weight: 900; 
+	color: red;
+	font-size: 50pt;
+}
+h2{
+	color: #646060;
+	font-size: 30pt;
+}
+@font-face {
+    font-family: '112'; /* Имя шрифта */
+    src: url(112.ttf); /* Путь к файлу со шрифтом */
+   }		
+</style>
+				
+		
+   </head>
+        <body>
+	
+	<CENTER>
+
+
+	    <br/>
+<div class="wrapper"> <img src="Agrofmlogo.png" width="550px" />
+    </div>
+<!--div><h1>RADIO</h1></div-->
+<div class="wrap">	
+	
+<audio preload="auto" id="player" src="https://ample-07.radiojar.com/svfq9a9ccz4tv?1524806984=&rj-ttl=4&rj-token" type="audio/ogg"></audio>
+<audio preload="auto" id="player" src="000.mp3" type="audio/mp3"></audio>
+	
+<div id="con">  </div>	
+	
+<div id="content">  </div>
+
+<div class="cont2">  </div>
+
+ 
+
+<!--div id="id">
+	<button id="play" onclick="document.getElementById('player').play()">Play&#9835;</button><br/><br/>
+	<button id="plays" onclick="document.getElementById('player').pause()"><span style="color:red;">I I</span> Pause</button>&#8195;
+	<a id="a" href="https://agro.fm/analitic">Відвідати наш веб-портал</a>
+</div> 
+</div> 
+
+<div id="co">  </div-->
+
+<!--br/><br/><br/><br/><br/><br/><br/>   <br/><br/><br/><br/><br/>  <br/><br/><br/-->
+<a href="https://agro.fm/analitic"><img class="tg" src="Screenshot_5455.png"/></a><br>
+<br>
+<a href="https://agro.fm/"><img class="mg" src="Screenshot_53.png"/></a>
+<!--a href="https://agro.fm"><b>www.AgroFM </b></a-->
+<h2>Agro Farmer's Media</h2>
+  </CENTER>
+  
+ </div>
+ 
+  
+ <script> 
+ 
+var toggle  = document.getElementById("content");
+var content = document.getElementById("content");
+
+var togg  = document.getElementById("con");
+var conten = document.getElementById("con");
+
+var i=1;
+
+toggle.addEventListener("click", function() {
+i++;
+  if(i%2==0) {
+  document.getElementById('player').play();}
+else {
+  document.getElementById('player').pause();}
+  
+ content.classList.toggle("show");
+ conten.classList.toggle("show");
+});
+
+
+function f(){
+  if(i%2==0){ 
+  document.getElementById('player').play();}
+    if(!i%2==0){ return; } 
+  };
+  
+setInterval(f,1500);
+ 
+ 
+ 
+ 
+ </script>
+ 
+ 
+  
+    </body>
+</html>
